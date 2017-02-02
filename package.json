@@ -22,7 +22,7 @@
   "author": "Google",
   "repository": {
     "type": "git",
-    "url": "https://github.com/firebase/firebaseui-web.git"
+    "url": "https://github.com/florianwittmann/firebaseui-web.git"
   },
   "license": "Apache-2.0",
   "devDependencies": {
