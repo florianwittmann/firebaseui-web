@@ -28,9 +28,9 @@
       {css mdl-textfield--floating-label}">
     <label class="{css mdl-textfield__label} {css firebaseui-label}" for="email">
       {if $changeEmail}
-        {msg desc="Label of a change email address input field."}Enter new email address{/msg}
+        {msg desc="Label of a change email address input field."}Neue E-Mail eingeben{/msg}
       {else}
-        {msg desc="Label of an email address input field."}Email{/msg}
+        {msg desc="Label of an email address input field."}E-Mail{/msg}
       {/if}
     </label>
     <input
@@ -64,20 +64,20 @@
       <span class="{css firebaseui-idp-text} {css firebaseui-idp-text-long}">
         {msg desc="Label for a button to sign in with an email account that requires a password.
             The long version"}
-          Sign in with email
+          Per E-Mail einloggen
         {/msg}
       </span>
       <span class="{css firebaseui-idp-text} {css firebaseui-idp-text-short}">
         {msg desc="Label for a button to sign in with an email account that requires a password.
             The short version"}
-          Email
+          E-Mail
         {/msg}
       </span>
     {else}
       <span class="{css firebaseui-idp-text} {css firebaseui-idp-text-long}">
         {msg desc="Labels for sign-in buttons, long version"}
-          Sign in with{sp}
-          {call .idpName data="all" /}
+          Per{sp}
+          {call .idpName data="all" /} einloggen
         {/msg}
       </span>
       <span class="{css firebaseui-idp-text} {css firebaseui-idp-text-short}">
@@ -99,7 +99,7 @@
       {$label}
     {else}
       {msg desc="Label of the button that takes the user to the next step in the sign-in flow."}
-        Next
+        Weiter
       {/msg}
     {/if}
   </button>
@@ -113,7 +113,7 @@
   {call .submitButton}
     {param label kind="text"}
       {msg desc="The submit button in the sign-in form."}
-        Sign In
+        Einloggen
       {/msg}
     {/param}
   {/call}
@@ -128,7 +128,7 @@
     {param label kind="text"}
       {msg desc="The submit button for a form that changes the state of the user
           (e.g. creating an account, resetting the password, etc.)."}
-        Save
+        Weiter
       {/msg}
     {/param}
   {/call}
@@ -143,7 +143,7 @@
   <div class="{css firebaseui-textfield} {css mdl-textfield} {css mdl-js-textfield}{sp}
       {css mdl-textfield--floating-label}">
     <label class="{css mdl-textfield__label} {css firebaseui-label}" for="name">
-      {msg desc="Label of a field for setting the user's name."}First &amp; last name{/msg}
+      {msg desc="Label of a field for setting the user's name."}Dein Name{/msg}
     </label>
     <input
         type="text"
@@ -171,7 +171,7 @@
         {if $label}
           {$label}
         {else}
-          {msg desc="Label of a field for setting new password."}Choose password{/msg}
+          {msg desc="Label of a field for setting new password."}Passwort wählen{/msg}
         {/if}
       </label>
       <input
@@ -203,9 +203,9 @@
       {css mdl-textfield--floating-label}">
     <label class="{css mdl-textfield__label} {css firebaseui-label}" for="password">
       {if $current}
-        {msg desc="Label of a password field."}Current password{/msg}
+        {msg desc="Label of a password field."}Aktuelles Passwort{/msg}
       {else}
-        {msg desc="Label of a password field."}Password{/msg}
+        {msg desc="Label of a password field."}Passwort{/msg}
       {/if}
     </label>
     <input
@@ -226,7 +226,7 @@
  */
 {template .passwordRecoveryButton}
   <a class="{css firebaseui-link} {css firebaseui-id-secondary-link}" href="javascript:void(0)">
-    {msg desc="Label of the password recovery link"}Trouble signing in?{/msg}
+    {msg desc="Label of the password recovery link"}Passwort vergessen?{/msg}
   </a>
 {/template}
 
@@ -237,7 +237,7 @@
 {template .cancelButton}
   <button class="{css firebaseui-id-secondary-link} {css firebaseui-button}{sp}
       {css mdl-button} {css mdl-js-button} {css mdl-button--raised} {css mdl-button--colored}">
-    {msg desc="Link to cancel the current flow."}Cancel{/msg}
+    {msg desc="Link to cancel the current flow."}Abbrechen{/msg}
   </button>
 {/template}
 
@@ -249,8 +249,7 @@
   {@param? tosUrl: string} /** The Terms of Service URL. */
   <p class="{css firebaseui-tos}">
     {msg desc="Label for TOS in a sign-up form"}
-      By tapping SAVE, you are indicating that you agree to the{sp}
-      <a href="{$tosUrl}" class="{css firebaseui-link}" target="_blank">Terms of Service</a>
+      Mit deiner Registrierung erklärst du dich mit den {sp}<a href="{$tosUrl}" class="{css firebaseui-link}" target="_blank">AGB</a> einverstanden.
     {/msg}
   </p>
 {/template}
@@ -267,7 +266,7 @@
       <a href="javascript:void(0)"
          class="{css firebaseui-link} {css firebaseui-id-dismiss-info-bar}">
         {msg desc="label of a button which dismisses the notification message"}
-          Dismiss
+          Schliessen
         {/msg}
       </a>
     </p>
@@ -300,7 +299,7 @@
     {case 'twitter.com'}
       {msg desc="Display name of the identity provider for Twitter sign-in."}Twitter{/msg}
     {default}
-      {msg desc="Display name of the identity provider for password sign-in."}Password{/msg}
+      {msg desc="Display name of the identity provider for password sign-in."}Passwort{/msg}
   {/switch}
 {/template}
 

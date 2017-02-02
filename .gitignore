@@ -4,7 +4,7 @@ node_modules/
 # Generated directories.
 generated/
 out/
-dist/
+#dist/ We use github as repo for npm. So we want to upload the dist files.
 
 # Generated files.
 *.log
